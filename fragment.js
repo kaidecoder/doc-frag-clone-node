@@ -80,7 +80,7 @@ const myList = elementFromHTML(`
 //this drops the fragment into the code as if it were typed from the start
 document.body.append(myList)
 
-//Now copy then add an item to my template using CloneNode.  The cloneNode method does not include the child nodes by default
+//Now copy then add an item to my template using CloneNode.  The cloneNode method does not include the child nodes by default.  You must use "true" to include the child nodes.
 console.log(myList)
 const listChildren = myList.children
 const bananasItem = listChildren[1]
