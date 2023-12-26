@@ -1,5 +1,5 @@
 /**
- * ! This technique allows you to pass in an HTML string and receive an HTML element back, so you have access to things like class list, event listeners, text content etc.
+ * ! HTML TEMPLATE: This technique allows you to pass in an HTML string and receive an HTML object back, so you have access to things like class list, event listeners, text content etc.
  * Reference:  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
  * 
  * the HTMLTemplateElement interface includes a standard content property (without an equivalent content/markup attribute). This content property is read-only and holds a DocumentFragment that contains the DOM subtree represented by the template. Be careful when using the content property because the returned DocumentFragment can exhibit unexpected behavior.
