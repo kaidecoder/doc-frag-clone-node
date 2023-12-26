@@ -106,5 +106,5 @@ docFrag.appendChild(item2)
 console.log(docFrag)
 //by appending a document fragment to a parent, items are moved from the document fragment to the parent
 newList.appendChild(docFrag)
-//logging the doc frag after the moves shows it is empty
+//logging the doc frag after the move shows it is empty
 console.log(docFrag)
