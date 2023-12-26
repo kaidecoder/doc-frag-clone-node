@@ -58,9 +58,10 @@ if ("content" in document.createElement("template")) {
     SUMMARY:  Make a template then clone it with cloneNode.  When using the "content" property during the cloning stage, a DocumentFragment gets returned!!!
 
     NOTE: When a DocumentFragment value is passed, Node.appendChild and similar methods move only the child nodes of that value into the target node. Therefore, it is usually preferable to attach event handlers to the children of a DocumentFragment, rather than to the DocumentFragment itself.
-
-
  **/
+/**
+ * ! HTML Template
+**/
 //given an html string, this function will return an object for you
 function elementFromHTML(html){
     //create a template element to store html

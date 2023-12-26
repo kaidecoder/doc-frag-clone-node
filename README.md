@@ -44,3 +44,11 @@ for (const fruit of fruits) {
 
 ul.append(fragment);
 **/
+
+/**
+* ! The Content Template Element
+
+The <template> HTML element is a mechanism for holding HTML that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript.
+
+The content property is read-only and holds a DocumentFragment that contains the DOM subtree represented by the template. Be careful when using the content property because the returned DocumentFragment can exhibit unexpected behavior.
+**/
