@@ -79,5 +79,31 @@ const myList = elementFromHTML(`
 //this drops the fragment into the code as if it were typed from the start
 document.body.append(myList)
 
-//Now add items to my template
+//Now copy then add an item to my template using CloneNode.  The cloneNode method does not include the child nodes by default
+console.log(myList)
+const listChildren = myList.children
+const bananasItem = listChildren[1]
+console.log(bananasItem)
 
+const bananasCopy = bananasItem.cloneNode(true)
+
+myList.appendChild(bananasCopy)
+
+/**
+ * ! Make a document fragment.  Append children to that document fragment.  Append the fragment to some parent element.
+**/
+//Let's make a bunch of list items and append the document fragment to the template from above.
+
+const newList = myList
+const docFrag = document.createDocumentFragment()
+let item1 = document.createElement("li")
+item1.textContent = "Dounce Plum"
+let item2 = document.createElement("li")
+item2.textContent = "Sugar Apple"
+docFrag.appendChild(item1)
+docFrag.appendChild(item2)
+console.log(docFrag)
+//by appending a document fragment to a parent, items are moved from the document fragment to the parent
+newList.appendChild(docFrag)
+//logging the doc frag after the moves shows it is empty
+console.log(docFrag)
